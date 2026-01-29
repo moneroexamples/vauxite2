@@ -20,6 +20,23 @@ modules:
       - ublue-fastfetch
       # Fix taskbar icons for Xfce 4.20
       - gdk-pixbuf2-modules-extra
+      - mc
+      - tigervnc
+      - tigervnc-server
+      - autossh
+      - fluxbox
+      - xterm
+      - rofi
+      - fd-find
+      - fzf
+      - zoxide
+      - xsane
+      - podman-compose
+      - podman-machine
+      - python-uv
+      - distrobox
+      - vim
+      - htop
     remove:
       - firefox
       - firefox-langpacks
