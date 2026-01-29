@@ -28,13 +28,13 @@ jobs:
       fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
         recipe:
-          - vauxite.yml
-          - vauxite-base.yml
+          #- vauxite.yml
+          #- vauxite-base.yml
           - vauxite-minimal.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
-        uses: blue-build/github-action@v1.8
+        uses: blue-build/github-action@v1.11
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
