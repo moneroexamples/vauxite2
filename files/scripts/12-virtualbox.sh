@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-dnf5 install -y kernel-headers dkms
+dnf5 install -y kernel-headers dkms kernel-devel
 
 # get current Fedora version
 RELEASE="$(rpm -E %fedora)"
