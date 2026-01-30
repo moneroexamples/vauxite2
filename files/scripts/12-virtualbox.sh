@@ -2,6 +2,7 @@
 
 set -ouex pipefail
 
+dnf5 install -y kernel-headers dkms
 
 # get current Fedora version
 RELEASE="$(rpm -E %fedora)"
@@ -10,7 +11,7 @@ RELEASE="$(rpm -E %fedora)"
 #KERNEL_VER="$(rpm -qa | grep -E 'kernel-[0-9].*?[.\\-]ba' | cut -d'-' -f2,3)"
 KERNEL_VER="$(rpm -qa | grep -E 'kernel-core-[0-9].*?[.\\-]' | cut -d'-' -f3,3)"
 # install dkms
-dnf install -y dkms
+
 # get latest version number of VirtualBox
 VIRTUALBOX_VER="$(curl -L https://download.virtualbox.org/virtualbox/LATEST.TXT)"
 # URL to list of VirtualBox packages for latest version
