@@ -12,13 +12,14 @@ else
     curl -Lo /etc/yum.repos.d/_copr_ublue-os-staging.repo https://copr.fedorainfracloud.org/coprs/ublue-os/staging/repo/fedora-"${FRELEASE}"/ublue-os-staging-fedora-"${FRELEASE}".repo
 fi
 
-if [[ "${BASE_IMAGE_NAME}" == "kinoite" ]]; then
-    VARIANT_PKGS="supergfxctl-plasmoid supergfxctl"
-elif [[ "${BASE_IMAGE_NAME}" == "silverblue" ]]; then
-    VARIANT_PKGS="gnome-shell-extension-supergfxctl-gex supergfxctl"
-else
-    VARIANT_PKGS=""
-fi
+#if [[ "${BASE_IMAGE_NAME}" == "kinoite" ]]; then
+#    VARIANT_PKGS="supergfxctl-plasmoid supergfxctl"
+#elif [[ "${BASE_IMAGE_NAME}" == "silverblue" ]]; then
+#    VARIANT_PKGS="gnome-shell-extension-supergfxctl-gex supergfxctl"
+#else
+#    VARIANT_PKGS=""
+#fi
+VARIANT_PKGS=""
 
 dnf5 install -y \
     /rpms/nvidia/libnvidia-cfg-* \
