@@ -38,6 +38,7 @@ modules:
       - vim
       - htop
       - bash-completion
+      - xfce4-notes-plugin
     remove:
       - firefox
       - firefox-langpacks
