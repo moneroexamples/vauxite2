@@ -24,6 +24,7 @@ modules:
       - tigervnc
       - tigervnc-server
       - autossh
+      - sshfs
       - fluxbox
       - xterm
       - rofi
