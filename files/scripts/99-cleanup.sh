@@ -22,6 +22,6 @@ rm -f nvim.root 2>/dev/null || true
 rm -f dnf 2>/dev/null || true
 rm -rf selinux-policy 2>/dev/null || true
 
-for file in .wget-hsts* .wget-hpkp* .wh.* .*_lck_*; do
-  rm -rf "$file" 2>/dev/null || true
-done
+#for file in .wget-hsts* .wget-hpkp* .wh.* .*_lck_*; do
+#  rm -rf "$file" 2>/dev/null || true
+#done
