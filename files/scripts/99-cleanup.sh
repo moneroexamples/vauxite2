@@ -18,11 +18,11 @@ find /var/tmp -mindepth 1 -maxdepth 1 -exec /usr/bin/rm -rf {} + 2>/dev/null || 
 # shouldn't be there. I have no idea if these files are coming from this image but try
 # to delete them anyway.
 cd /
-/usr/bin/rm -f nvim.root 2>/dev/null || true
+#/usr/bin/rm -f nvim.root 2>/dev/null || true
 #/usr/bin/rm -f dnf 2>/dev/null || true
 
-[ -f nvim.root ] && /usr/bin/rm -f nvim.root
-[ -f dnf ] && /usr/bin/rm -f dnf
+#/usr/bin/rm -f nvim.root
+#/usr/bin/rm -f dnf
 
 #rm -rf selinux-policy 2>/dev/null || true
 
