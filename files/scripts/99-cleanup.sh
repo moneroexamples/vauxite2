@@ -2,7 +2,10 @@
 #set -ouex pipefail
 set -uex pipefail
 
-find /tmp -mindepth 1 -maxdepth 1 -exec /usr/bin/rm -rf {} + 2>/dev/null || true
+#find /tmp -mindepth 1 -maxdepth 1 -exec /usr/bin/rm -rf {} + 2>/dev/null || true
+find /tmp -mindepth 1 -maxdepth 1 -delete 2>/dev/null || true
+
+
 #find /var/tmp -mindepth 1 -maxdepth 1 -exec /usr/bin/rm -rf {} + 2>/dev/null || true
 
 #/usr/bin/rm -rf /var/cache/dnf/* 2>/dev/null || true
