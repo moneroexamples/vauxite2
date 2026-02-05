@@ -23,6 +23,8 @@ find /var/tmp -mindepth 1 -maxdepth 1 -exec /usr/bin/rm -rf {} + 2>/dev/null || 
 
 echo "cleanup done"
 
+exit 0
+
 #/usr/bin/rm -f nvim.root
 #/usr/bin/rm -f dnf
 
